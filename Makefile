@@ -1,7 +1,7 @@
 CC=clang
 CCFLAGS=-O3
 SRC=main.c
-OUT=mychmod
+OUT=simple-chmod
 TEST_FILE=test
 
 $(OUT): $(SRC)
