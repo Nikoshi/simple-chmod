@@ -5,7 +5,8 @@ OUT=mychmod
 TEST_FILE=test
 
 $(OUT): $(SRC)
-	$(CC) $(CCFLAGS) -o $(OUT) $(SRC) 
+	$(CC) $(CCFLAGS) -o $(OUT) $(SRC)
+	strip $(OUT)
 
 clean:
 	rm -f $(OUT)
