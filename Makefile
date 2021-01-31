@@ -6,9 +6,11 @@ TEST_FILE=test
 
 $(OUT): $(SRC)
 	$(CC) $(CCFLAGS) -o $(OUT) $(SRC) 
+
 clean:
 	rm -f $(OUT)
 	rm -f $(TEST_FILE)
+
 test: $(OUT)
 	touch $(TEST_FILE) && echo
 	./$(OUT) 777 $(TEST_FILE) && ls -l $(TEST_FILE) && echo
