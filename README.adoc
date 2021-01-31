@@ -1,0 +1,9 @@
+= simple-chmod
+
+A simple chmod tool which changes the file permissions using the `chmod` syscalls
+
+== Building
+
+```
+make
+```
